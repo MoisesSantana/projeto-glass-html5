@@ -83,7 +83,6 @@ p {
 /* formatação do menu */
 
 .menu {
-  display: block;
 }
 
 .menu h1 {
@@ -117,4 +116,18 @@ p {
 
 .menu a:hover {
   color: rgb( 255 , 255 , 255 );
+}
+
+.container {
+  width: 500px;
+  float: left;
+}
+
+.lateral {
+  width: 350px;
+  float: right;
+}
+
+.rodape {
+  clear: both;
 }
