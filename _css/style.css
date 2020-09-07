@@ -95,7 +95,7 @@ a:hover {
 .menu {
 }
 
-.menu h1 {
+.menu h2 {
   display: none;
 }
 
@@ -233,4 +233,18 @@ table .col-direita {
 
 .rodape p {
   text-align: center;
+}
+
+/* formatação iframe */
+
+.content {
+  width: 1000px;
+  margin: auto;
+}
+
+.frame-spec {
+  width: 400px;
+  height: 280px;
+  border: none;
+  margin-left: 50px;
 }
