@@ -32,21 +32,21 @@ fieldset {
 }
 
 .user {
-  background: url('../_imagens/icone-contato.png') no-repeat 95% 95%;
+  background: url('/../_imagens/icone-contato.png') no-repeat 95% 95%;
 }
 
 .addres {
-  background: url('../_imagens/icone-endereco.png') no-repeat 95% 95%;
+  background: url('/../_imagens/icone-endereco.png') no-repeat 95% 95%;
 }
 
 .message {
-  background: url('../_imagens/icone-mensagem.png') no-repeat 95% 95%;
+  background: url('/../_imagens/icone-mensagem.png') no-repeat 95% 95%;
 }
 
 .user {
-  background: url('../_imagens/icone-contato.png') no-repeat 95% 95%;
+  background: url('/../_imagens/icone-contato.png') no-repeat 95% 95%;
 }
 
 .buy {
-  background: url('../_imagens/icone-pagamento.png') no-repeat 95% 95%;
+  background: url('/../_imagens/icone-pagamento.png') no-repeat 95% 95%;
 }
