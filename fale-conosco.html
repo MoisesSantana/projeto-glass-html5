@@ -45,30 +45,30 @@
             <legend>Identificação do Usuário</legend>
             
             <p><label for="boxName">Nome: </label>
-            <input type="text" name="name" id="boxName" size="20" maxlength="30" placeholder="Nome completo"></p>
+            <input type="text" name="iName" id="boxName" size="20" maxlength="30" placeholder="Nome completo"></p>
             
             <p><label for="boxPassword">Senha</label>: 
-            <input type="password" name="password" id="boxPassword" placeholder="Senha de 8 digitos" size="20" maxlength="8"></p>
+            <input type="password" name="iPassword" id="boxPassword" placeholder="Senha de 8 digitos" size="20" maxlength="8"></p>
             
             <p><label for="boxEmail">E-mail: </label>
-            <input type="email" name="email" id="boxEmail" size="20" placeholder="e-mail"></p>
+            <input type="email" name="iEmail" id="boxEmail" size="20" placeholder="e-mail"></p>
             
             <fieldset class="sex">
               <legend>Sexo</legend>
-              <input type="radio" name="sex" id="sexMasc"><label for="sexMasc">Masculino</label>
+              <input type="radio" name="iSex" id="sexMasc"><label for="sexMasc">Masculino</label>
               <br>
-              <input type="radio" name="sex" id="sexFem"><label for="sexFem">Feminino</label>
+              <input type="radio" name="iSex" id="sexFem"><label for="sexFem">Feminino</label>
             </fieldset>
-            <p><label for="boxData">Data de Nascimento: </label><input type="date" name="data" id="boxData"></p>
+            <p><label for="boxData">Data de Nascimento: </label><input type="date" name="iData" id="boxData"></p>
           </fieldset>
           <fieldset class="addres">
             <legend>Endereço do Usuário</legend>
             <p><label for="boxStreet">Logradouro: </label>
-            <input type="text" name="street" id="boxStreet" size="20" placeholder="Rua, av, str, trav..."> </p>
+            <input type="text" name="iStreet" id="boxStreet" size="20" placeholder="Rua, av, str, trav..."> </p>
             <p><label for="boxNumber">Número: </label>
-            <input type="number" name="number" size="4" id="boxNumber" min="0" max="999999999" placeholder="0000"></p>
+            <input type="number" name="iNumber" size="4" id="boxNumber" min="0" max="999999999" placeholder="0000"></p>
             <p><label for="boxState">Estado: </label>
-            <select name="state" id="boxState">
+            <select name="iState" id="boxState">
               <optgroup label="Região Sudeste">
                 <option value="RJ">Rio de Janeiro</option>
                 <option value="SP">São Paulo</option>
@@ -81,7 +81,7 @@
               </optgroup>
             </select></p>
             <p><label for="boxCity">Cidade: </label>
-            <input type="text" name="city" id="boxCity" size="20" placeholder="Cidade onde reside"></p>
+            <input type="text" name="iCity" id="boxCity" size="20" placeholder="Cidade onde reside"></p>
             <datalist id="cities">
               <option value="Rio de Janeiro"></option>
               <option value="Nova Iguaçu"></option>
@@ -91,8 +91,10 @@
             </fieldset>
             <fieldset class="message">
               <legend>Mensagem do Usuário</legend>
-              <p>Grau de Urgência:</p>
-              <p>Mensagem:</p>
+              <p><label for="boxUrgency">Grau de Urgência: </label>
+              Min<input type="range" name="iUrgency" id="boxUrgency" min="0" max="10">Max</p>
+              <p><label for="boxMessage">Mensagem:</label>
+              <textarea name="iMessage" id="boxMessage" cols="40" rows="5" placeholder="Digite sua mensagem"></textarea></p>
             </fieldset>
             <fieldset class="buy">
               <legend>Quero um Google Glass</legend>
