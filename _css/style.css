@@ -248,3 +248,7 @@ table .col-direita {
   border: none;
   margin-left: 50px;
 }
+
+.align-video {
+  margin: auto;
+}
