@@ -98,10 +98,14 @@
             </fieldset>
             <fieldset class="buy">
               <legend>Quero um Google Glass</legend>
-              <p>Gostaria de adquirir um Google Glass quando disponível</p>
-              <p>Cor:</p>
-              <p>Quantidade:</p>
-              <p>Preço Total: R$</p>
+              <p><input type="checkbox" name="iRequest" id="boxRequest">
+              <label for="boxRequest">Gostaria de adquirir um Google Glass quando disponível</label></p>
+              <p><label for="boxColor">Cor: </label>
+              <input type="color" name="iColor" id="boxColor" value="#0000FF"></p>
+              <p><label for="boxAmount">Quantidade: </label>
+              <input type="number" name="iAmount" id="boxAmount" min="1" max="9999999999" size="4" placeholder="0"></p>
+              <p><label for="boxPrice">Preço Total: R$</label>
+              <input type="text" name="iPrice" id="boxPrice" placeholder="Total a pagar" readonly></p>
             </fieldset>
             
             [BOTÃO ENVIAR]
