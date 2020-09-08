@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'FonteLogo';
-  src: url('../fonts/bubblegum-sans-regular.otf');
+  src: url('./../fonts/bubblegum-sans-regular.otf');
 }
 
 body {
@@ -34,7 +34,7 @@ a:hover {
 .cabecalho {
   border-bottom: 1px solid rgb( 96 , 96 , 96 );
   height: 150px;
-  background: url('../imagens/glass-logo-peq.jpg') no-repeat 0 80px;
+  background: url('./../imagens/glass-logo-peq.jpg') no-repeat 0 80px;
 }
 
 .cabecalho h1 {
