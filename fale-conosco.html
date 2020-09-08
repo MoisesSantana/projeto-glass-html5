@@ -40,15 +40,18 @@
             <h3 class="alinha-direita">Atualizado em 01/Maio/2013</h3>
           </section>
         </header>
-        <form action="">
+        <form method="POST" id="formContact" action="mailto:moisaant@gmail.com">
           <fieldset class="user">
             <legend>Identificação do Usuário</legend>
             
-            <p><label for="boxName">Nome: </label><input type="text" name="name" id="boxName" size="20" maxlength="30" placeholder="Nome completo"></p>
-
-            <p><label for="boxPassword">Senha</label>: <input type="password" name="password" id="boxPassword" placeholder="Senha de 8 digitos" size="20" maxlength="8"></p>
+            <p><label for="boxName">Nome: </label>
+            <input type="text" name="name" id="boxName" size="20" maxlength="30" placeholder="Nome completo"></p>
             
-            <p><label for="boxEmail">E-mail: </label><input type="email" name="email" id="boxEmail" size="20" placeholder="e-mail"></p>
+            <p><label for="boxPassword">Senha</label>: 
+            <input type="password" name="password" id="boxPassword" placeholder="Senha de 8 digitos" size="20" maxlength="8"></p>
+            
+            <p><label for="boxEmail">E-mail: </label>
+            <input type="email" name="email" id="boxEmail" size="20" placeholder="e-mail"></p>
             
             <fieldset class="sex">
               <legend>Sexo</legend>
@@ -60,33 +63,54 @@
           </fieldset>
           <fieldset class="addres">
             <legend>Endereço do Usuário</legend>
-            <p>Logradouro:</p>
-            <p>Número:</p>
-            <p>Estado:</p>
-            <p>Cidade:</p>
-          </fieldset>
-          <fieldset class="message">
-            <legend>Mensagem do Usuário</legend>
-            <p>Grau de Urgência:</p>
-            <p>Mensagem:</p>
-          </fieldset>
-          <fieldset class="buy">
-            <legend>Quero um Google Glass</legend>
-            <p>Gostaria de adquirir um Google Glass quando disponível</p>
-            <p>Cor:</p>
-            <p>Quantidade:</p>
-            <p>Preço Total: R$</p>
-          </fieldset>
-          
-          [BOTÃO ENVIAR]
-        </form>
-      </article>
-    </section>
-    <footer class="rodape">
-      <p>Copyright &copy; 2013 - by Gustavo Guanabara<br>
-        <a href="https://facebook.com/cursoemvideo" target="_blank">Facebook</a> | <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
-      </footer>
-    </div>
-  </body>
-  </html>
-  
+            <p><label for="boxStreet">Logradouro: </label>
+            <input type="text" name="street" id="boxStreet" size="20" placeholder="Rua, av, str, trav..."> </p>
+            <p><label for="boxNumber">Número: </label>
+            <input type="number" name="number" size="4" id="boxNumber" min="0" max="999999999" placeholder="0000"></p>
+            <p><label for="boxState">Estado: </label>
+            <select name="state" id="boxState">
+              <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+              </optgroup>
+              <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+              </optgroup>
+            </select></p>
+            <p><label for="boxCity">Cidade: </label>
+            <input type="text" name="city" id="boxCity" size="20" placeholder="Cidade onde reside"></p>
+            <datalist id="cities">
+              <option value="Rio de Janeiro"></option>
+              <option value="Nova Iguaçu"></option>
+              <option value="Niterói"></option>
+              <option value="Belford Roxo"></option>
+            </datalist>
+            </fieldset>
+            <fieldset class="message">
+              <legend>Mensagem do Usuário</legend>
+              <p>Grau de Urgência:</p>
+              <p>Mensagem:</p>
+            </fieldset>
+            <fieldset class="buy">
+              <legend>Quero um Google Glass</legend>
+              <p>Gostaria de adquirir um Google Glass quando disponível</p>
+              <p>Cor:</p>
+              <p>Quantidade:</p>
+              <p>Preço Total: R$</p>
+            </fieldset>
+            
+            [BOTÃO ENVIAR]
+          </form>
+        </article>
+      </section>
+      <footer class="rodape">
+        <p>Copyright &copy; 2013 - by Gustavo Guanabara<br>
+          <a href="https://facebook.com/cursoemvideo" target="_blank">Facebook</a> | <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
+        </footer>
+      </div>
+    </body>
+    </html>
+    
