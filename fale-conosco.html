@@ -40,7 +40,7 @@
             <h3 class="alinha-direita">Atualizado em 01/Maio/2013</h3>
           </section>
         </header>
-        <form method="POST" id="formContact" action="mailto:moisaant@gmail.com">
+        <form method="POST" id="formContact" action="mailto:moisaant@gmail.com" oninput="calcTotal();">
           <fieldset class="user">
             <legend>Identificação do Usuário</legend>
             
@@ -106,9 +106,8 @@
               <input type="number" name="iAmount" id="boxAmount" min="1" max="9999999999" size="4" placeholder="0"></p>
               <p><label for="boxPrice">Preço Total: R$</label>
               <input type="text" name="iPrice" id="boxPrice" placeholder="Total a pagar" readonly></p>
-            </fieldset>
-            
-            [BOTÃO ENVIAR]
+              </fieldset>
+            <input type="image" name="iSend" src="_imagens/botao-enviar.png">
           </form>
         </article>
       </section>
@@ -117,6 +116,13 @@
           <a href="https://facebook.com/cursoemvideo" target="_blank">Facebook</a> | <a href="https://twitter.com/cursoemvideo" target="_blank">Twitter</a></p>
         </footer>
       </div>
+      <script>
+        function calcTotal() {
+          let amount = parseInt(document.querySelector('#boxAmount').value);
+          let result = amount * 1500;
+          document.querySelector('#boxPrice').value = result;
+        }
+      </script>
     </body>
     </html>
     
