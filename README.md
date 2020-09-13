@@ -7,12 +7,14 @@ Ele tem total de 5 páginas falando sobre o google glass, onde o cliente pode le
 * CSS3
 * JavaScript
 
+### Imagens do projeto:
+
 ![Imagem do projeto GoogleGlass página index](./readme-img/01-index.jpg)
 ![Imagem do projeto GoogleGlass página especificações](./readme-img/02-specs.jpg)
 ![Imagem do projeto GoogleGlass página fotos](./readme-img/03-fotos.jpg)
 ![Imagem do projeto GoogleGlass página multimidia](./readme-img/04-multimidia.jpg)
 ![Imagem do projeto GoogleGlass página contatos](./readme-img/05-fale-conosco.jpg)
 
-### Para visualizar basta abrir o link:
+#### Para visualizar basta abrir o link:
 
 https://moisessantana.github.io/projeto-glass-html5/
